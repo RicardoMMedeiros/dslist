@@ -1,5 +1,6 @@
 package com.treinamentospring.dslist.dto;
 import com.treinamentospring.dslist.entities.Game;
+
 public class GameMinDTO {
 
 	private Long id;
@@ -18,7 +19,25 @@ public class GameMinDTO {
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getShortDescription();
 	}
-	
-	
 
+	public Long getId() {
+		return id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public Integer getYear() {
+		return year;
+	}
+
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public String getShortDescription() {
+		return shortDescription;
+	}
+	
 }
